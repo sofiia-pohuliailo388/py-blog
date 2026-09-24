@@ -5,7 +5,10 @@ app_name = "blog"
 
 urlpatterns = [
     path("", views.IndexList.as_view(), name="index"),
-    path("posts/<int:pk>/", views.PostDetailView.as_view(), name="post-detail"),
+    path(
+        "posts/<int:pk>/",
+        views.PostDetailView.as_view(),
+        name="post-detail"),
     path(
         "posts/<int:pk>/",
         views.PostDetailView.as_view(),

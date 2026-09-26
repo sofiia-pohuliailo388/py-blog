@@ -17,6 +17,7 @@ class IndexList(generic.ListView):
 class PostDetailView(FormMixin, generic.DetailView):
     model = Post
     form_class = CommentaryForm
+    template_name = "blog/post_detail.html"
 
 
 class CommentaryCreateView(generic.CreateView):
